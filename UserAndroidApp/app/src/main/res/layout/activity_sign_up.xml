@@ -1,0 +1,89 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".LoginActivity">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logopic"
+        android:src="@mipmap/logo"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/SignUpMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter the username and password to sign Up."
+        android:textStyle="italic"
+        android:textAlignment="gravity"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/logopic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameSpaceSignUp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/SignUpMessage"/>
+
+    <EditText
+        android:id="@+id/passwordSpaceSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/usernameSpaceSignUp"/>
+
+    <EditText
+        android:id="@+id/passwordSpaceSignUp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confrim Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/passwordSpaceSignUp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admin PIN"
+        android:id="@+id/AdminPINSpace"
+        android:inputType="numberPassword"
+        android:layout_below="@id/passwordSpaceSignUp2"/>
+
+    <Button
+        android:id="@+id/finishSignUpButton"
+        android:text="Finish Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AdminPINSpace"
+        android:layout_alignParentLeft="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CancelButton"
+        android:text="Cancel"
+        android:layout_below="@id/AdminPINSpace"
+        android:layout_toRightOf="@id/finishSignUpButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PINMessage"
+        android:layout_below="@id/finishSignUpButton"/>
+
+
+
+</RelativeLayout>

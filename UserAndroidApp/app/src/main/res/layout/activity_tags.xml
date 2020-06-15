@@ -1,0 +1,86 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".Tags">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LOGO"
+        android:src="@mipmap/logo"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+
+
+    <Button
+        android:id="@+id/TagButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag 1"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/LOGO"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagButton2"
+        android:text="Tag 2"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/TagButton1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagButton3"
+        android:text="Tag 3"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/TagButton2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagButton4"
+        android:text="Tag 4"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/TagButton3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TagButton4"
+        android:text="Please contact your admin to setup more tags to the system."
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PictureButton"
+        android:text="Door Pictures"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/TagButton4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PictureButton"
+        android:text="Please contact your admin to setup more tags to the system."
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
